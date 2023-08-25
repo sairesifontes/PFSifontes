@@ -3,124 +3,298 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- titulo pestaña -->
     <title>SIFLAR Reparación de computadoras </title>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=Alatsi&display=swap" rel="stylesheet">
     <link rel="icon" href="./img/SIFLAR.ico">
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/cd1d9437d4.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Css -->
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
 
 <body>
-    <div class="container-fluid">
-    <header>
-        <nav>
-            <div class="container-logo-nav">
-                <a href="./index.html"><img class="img-logo" src="./img/SIFLAR.png" alt="logo"></a>
-            </div>
-            <ul class="nav-bar">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                <li><a href="./pages/servicios.html">Servicios</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-                <li><a href="./pages/opiniones.html">Opiniones</a></li>
-            </ul>
-        </nav>
-    </header>
+        <header class="headerNavBar">
+            <!-- Menu bootstrap -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid container-navbar">
+                    <div class="container-logo-nav">
+                        <a href="./index.html"><img class="img-logo" src="./img/SIFLAR.png" alt="logo"></a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/opiniones.html">Opiniones</a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- <nav class="container-nav-bar">
+                <div class="container-logo-nav">
+                    <a href="./index.html"><img class="img-logo" src="./img/SIFLAR.png" alt="logo"></a>
+                </div>
+                <ul class="nav-bar">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="./pages/servicios.html">Servicios</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                    <li><a href="./pages/opiniones.html">Opiniones</a></li>
+                </ul>
+            </nav> -->
+        </header>
 
-    <main>
+        <main>
+                <section id="titulo" class="jumbotron text-center">
+                    <img class="img-titulo" src="./img/reparacion.jpg" alt="hombre_repara_pc">
+                    <H1>Servicio Tecnico en Computadoras</H1>  
+                </section>
 
-        <section id="titulo">
-            <img class="img-titulo" src="./img/reparacion.jpg" alt="hombre_repara_pc">
-            <H1>Servicio Tecnico en Computadoras</H1>  
-        </section>
+            <div id="services" class="container-fluid text-center">
+                <h2>SERVICIOS</h2>
 
-        <div>
-            <h2 class="services">Servicios</h2>  
-            <section class="servicios1">      
-                <article>
-                    <img src="./img/visitas.png" alt="visitas">
-                    <h3>Visitas</h3>
-                </article>
+                <div class="row slideanim">
+                    <div class="col-sm-4">
+                        <span class="glyphicon glyphicon-off logo-small"></span>
+                        <img src="./img/visitas.png" alt="visitas">
+                        <h3>Visitas</h3>
+                    </div>
 
-                <article>
-                    <img src="./img/mantenimiento.png" alt="mantenimiento">
-                    <h3>Mantenimiento</h3>
-                </article>
+                    <div class="col-sm-4">
+                        <span class="glyphicon glyphicon-heart logo-small"></span>
+                        <img src="./img/mantenimiento.png" alt="mantenimiento">
+                        <h3>Mantenimiento</h3>
+                    </div>
 
-                <article>
-                    <img src="./img/antivirus.png" alt="antivirus">
-                    <h3>Antivirus</h3>
-                </article>
+                    <div class="col-sm-4">
+                        <span class="glyphicon glyphicon-lock logo-small"></span>
+                        <img src="./img/antivirus.png" alt="antivirus">
+                        <h3>Antivirus</h3>
+                    </div>
+                </div>
+                
+                <div class="row slideanim">
+                    <div class="col-sm-4">
+                        <!-- <p class="glyphicon glyphicon-leaf logo-small"></p> -->
+                        <img src="./img/backups.png" alt="backups">
+                        <h3>Backups</h3>
+                    </div>
+                    
+                    <div class="col-sm-4">
+                        <span class="glyphicon glyphicon-certificate logo-small"></span>
+                        <img src="./img/asesoramiento.png" alt="asesoramiento">
+                        <h3>Asesoramiento</h3>
+                    </div>
+                    
+                    <div class="col-sm-4">
+                        <span class="glyphicon glyphicon-wrench logo-small"></span>
+                        <img src="./img/soporterem.png" alt="soporte_remoto">
+                        <h3>Soporte remoto</h3>
+                    </div>
+                </div>
 
-                <article>
-                    <img src="./img/backups.png" alt="backups">
-                    <h3>Backups</h3>
-                </article>
-            </section>
-            
-            <section class="servicios2">
-                <article>
-                    <img src="./img/asesoramiento.png" alt="asesoramiento">
-                    <h3>Asesoramiento</h3>
-                </article>
-
-                <article>
-                    <img src="./img/soporterem.png" alt="soporte_remoto">
-                    <h3>Soporte remoto</h3>
-                </article>
-            </section>
-            <div class="container-vermas">
-                <a class="vermas-link" href="./pages/servicios.html" target="_blank"><h3 class="vermas">VER MÁS</h3></a>  
-            </div>
-        </div>
-
-        <section class="adomicilio">
-            <h2 class="adom">Servicio Tecnico a domicilio</h2>
-            <img class="img-adom" src="./img/serviciodom.png" alt="serviciotecnico">
-        </section>
-
-        <section class="teccap">
-            <h3 class="tecnicos">
-                TECNICOS CAPACITADOS PARA EL MANTENIMIENTO DE TUS COMPUTADORAS Y LAPTOS, PARA BRINDARTE EL MEJOR SERVICIO ESPECIALIZADO.
-            </h3>
-        </section>
-
-        <section class="marcas">
-            <h3>
-                MARCAS QUE CONFIAN EN NOSOTROS
-            </h3>
-            <img class="container-marcas" src="./img/maarcas.png" alt="marcas">
-        </section>
-        
-    </main>
-
-    <div class="container-ws">
-        <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"><img class="img-ws" src="./img/WhatsApp_icon-removebg-preview.png" alt="whatsapp"></a>
-    </div>
-
-    <footer class="container-fluid">
-        <section class="content-footer">
-            <div class="box2">
-                <h2>Siguenos en nuestras Redes</h2>
-                <div class="redes">
-                    <a href="https://www.linkedin.com/home?original_referer=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2F" target="_blank"><img class="img-redes-footer" src="./img/linkedin.png" alt=""></a>
-                    <a href="https://es-la.facebook.com/" target="_blank"><img class="img-redes-footer" src="./img/facebook.png" alt=""></a>
-                    <a href="https://www.instagram.com/" target="_blank"><img class="img-redes-footer" src="./img/instagram.png" alt=""></a>
+                <div class="row">
+                    <div class="col-sm-12 container-vermas">
+                        <a class="vermas-link" href="./pages/servicios.html" target="_blank"><h3 class="vermas">VER MÁS</h3></a>  
+                    </div>
                 </div>
             </div>
 
-            <div class="derechos">
-                <img class="img-logosiftlar-footer" src="./img/SIFLAR.png" alt="">
-                <h3>Todos los derechos reservados.</h3>
+            <section class="row img-adom">
+                <div class="col-sm-12">
+                    <img class="img-adom" src="./img/soportetecnico.jpg" alt="serviciotecnico">
+                </div>
+            </section>
+    
+            <section class="container-fluid teccap">
+                <h3 class="tecnicos container-fluid text-center">
+                    TECNICOS CAPACITADOS PARA EL MANTENIMIENTO DE TUS COMPUTADORAS Y LAPTOS, PARA BRINDARTE EL MEJOR SERVICIO ESPECIALIZADO.
+                </h3>
+            </section>
+    
+            <section class="container-fluid marcas">
+                <h3 class="text-center container-sm">
+                    MARCAS QUE CONFIAN EN NOSOTROS
+                </h3>
+                <img class="container-sm container-marcas" src="./img/maarcas.png" alt="marcas">
+            </section>
+        
+            <!-- <div class="container text-center"> -->
+                
+                <!-- <h2 class="services">Servicios</h2>  
+                <div class="row"> -->
+                <!-- <section class="servicios1">       -->
+                    <!-- <article class="col-sm-12">
+                        <img src="./img/visitas.png" alt="visitas">
+                        <h3>Visitas</h3>
+                    </article>
+        
+                    <article class="col-sm-3">
+                        <img src="./img/mantenimiento.png" alt="mantenimiento">
+                        <h3>Mantenimiento</h3>
+                    </article>
+        
+                    <article class="col-sm-3">
+                        <img src="./img/antivirus.png" alt="antivirus">
+                        <h3>Antivirus</h3>
+                    </article>
+        
+                    <article class="col-sm-3">
+                        <img src="./img/backups.png" alt="backups">
+                        <h3>Backups</h3>
+                    </article> -->
+                <!-- </section> -->
+            <!-- </div> -->
+                    
+                <!-- <section class="servicios2">
+                    <article>
+                        <img src="./img/asesoramiento.png" alt="asesoramiento">
+                        <h3>Asesoramiento</h3>
+                    </article>
+        
+                    <article>
+                        <img src="./img/soporterem.png" alt="soporte_remoto">
+                        <h3>Soporte remoto</h3>
+                    </article>
+                </section>
+                    <div class="container-vermas">
+                        <a class="vermas-link" href="./pages/servicios.html" target="_blank"><h3 class="vermas">VER MÁS</h3></a>  
+                    </div>
+        
+                <section class="adomicilio">
+                    <h2 class="adom">Servicio Tecnico a domicilio</h2>
+                    <img class="img-adom" src="./img/serviciodom.png" alt="serviciotecnico">
+                </section>
+        
+                <section class="teccap">
+                    <h3 class="tecnicos">
+                        TECNICOS CAPACITADOS PARA EL MANTENIMIENTO DE TUS COMPUTADORAS Y LAPTOS, PARA BRINDARTE EL MEJOR SERVICIO ESPECIALIZADO.
+                    </h3>
+                </section>
+        
+                <section class="marcas">
+                    <h3>
+                        MARCAS QUE CONFIAN EN NOSOTROS
+                    </h3>
+                    <img class="container-marcas" src="./img/maarcas.png" alt="marcas">
+                </section> -->
+                
+        </main>
+
+        
+            <div class="container-ws">
+                <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"><img class="img-ws" src="./img/WhatsApp_icon-removebg-preview.png" alt="whatsapp"></a>
             </div>
-        </section>
-    </footer>
 
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 footer-column">
+                        <div class="derechos-footer">
+                            <img class="img-logosiftlar-footer" src="./img/SIFLAR.png" alt="">
+                            <h3>Todos los derechos reservados.</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 footer-column">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <h4 class="footer-title">Servicios</h4>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Antivirus</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Asesoramiento</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Backups a tus equipos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Soporte Remoto</a>
+                            </li>
+                        </ul>
+                    </div>
+                
+                    <div class="col-md-3 footer-column">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <h4 class="footer-title">SIFTLAR</h4>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Mision</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Vision</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Valores</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-md-3 footer-column">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <h4 class="footer-title">Contacto</h4>
+                            </li>
+                            <li class="nav-item">
+                                <p class="nav-link"><i class="fas fa-phone"></i>+5491125840000</p>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-envelope"></i>Contactanos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+                
+                <div class="row text-center">
+                    <div class="col-md-6 box">
+                        
+                    </div>
+                    <div class="col-md-12 box">
+                        <ul class="list-inline social-buttons">
+                            <li class="list-inline-item">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>        
+                            <li class="list-inline-item">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-</div>
-
 </body>
 </html>

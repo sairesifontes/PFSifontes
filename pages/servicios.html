@@ -16,17 +16,35 @@
 
 <body>
     <header>
-        <nav>
-            <div class="container-logo-nav">
-                <img class="img-logo" src="../img/SIFLAR.png" alt="logo">
+        <!-- Menu bootstrap -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid container-navbar">
+                <div class="container-logo-nav">
+                    <a href="./index.html"><img class="img-logo" src="../img/SIFLAR.png" alt="logo"></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./opiniones.html">Opiniones</a>
+                    </li>
+                    </ul>
+                </div>
             </div>
-            <ul class="nav-bar">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./opiniones.html">Opiniones</a></li>
-            </ul>
         </nav>
     </header>
 
@@ -85,7 +103,6 @@
                 <p>Soporte remoto informático para sus computadoras y servidores.</p>
             </article>
         </section>
-
     </main>
 
     <div class="container-ws">
@@ -93,21 +110,91 @@
     </div>
 
     <footer>
-        <section class="content-footer">
-            <div class="box2">
-                <h2>Siguenos en nuestras Redes</h2>
-                <div class="redes">
-                    <a href="https://www.linkedin.com/home?original_referer=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2F" target="_blank"><img class="img-redes-footer" src="../img/linkedin.png" alt=""></a>
-                    <a href="https://es-la.facebook.com/" target="_blank"><img class="img-redes-footer" src="../img/facebook.png" alt=""></a>
-                    <a href="https://www.instagram.com/" target="_blank"><img class="img-redes-footer" src="../img/instagram.png" alt=""></a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 footer-column">
+                    <div class="derechos-footer">
+                        <img class="img-logosiftlar-footer" src="../img/SIFLAR.png" alt="">
+                        <h3>Todos los derechos reservados.</h3>
+                    </div>
+                </div>
+
+                <div class="col-md-3 footer-column">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <h4 class="footer-title">Servicios</h4>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">Antivirus</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">Asesoramiento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">Backups a tus equipos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">Soporte Remoto</a>
+                        </li>
+                    </ul>
+                </div>
+            
+                <div class="col-md-3 footer-column">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <h4 class="footer-title">SIFTLAR</h4>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mision</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Vision</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Valores</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-3 footer-column">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <h4 class="footer-title">Contacto</h4>
+                        </li>
+                        <li class="nav-item">
+                            <p class="nav-link"><i class="fas fa-phone"></i>+5491125840000</p>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-envelope"></i>Contactanos</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="derechos">
-                <img class="img-logosiftlar-footer" src="../img/SIFLAR.png" alt="">
-                <h3>Todos los derechos reservados.</h3>
+            
+            
+            <div class="row text-center">
+                <div class="col-md-6 box">
+                    
+                </div>
+                <div class="col-md-12 box">
+                    <ul class="list-inline social-buttons">
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>        
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </section>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
