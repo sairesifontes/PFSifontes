@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=Alatsi&display=swap" rel="stylesheet">
+    <!-- icono pestaña -->
     <link rel="icon" href="./img/SIFLAR.ico">
     <!-- icons -->
     <script src="https://kit.fontawesome.com/cd1d9437d4.js" crossorigin="anonymous"></script>
@@ -20,9 +21,9 @@
 
 
 <body>
-        <header class="headerNavBar">
+        <header>
             <!-- Menu bootstrap -->
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <nav class="navbar navbar-expand-lg top-fixed container-nav-bar">
                 <div class="container-fluid container-navbar">
                     <div class="container-logo-nav">
                         <a href="./index.html"><img class="img-logo" src="./img/SIFLAR.png" alt="logo"></a>
@@ -31,181 +32,106 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/servicios.html">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/opiniones.html">Opiniones</a>
-                        </li>
+                        <ul class="navbar-nav container-li">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/opiniones.html">Opiniones</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-            <!-- <nav class="container-nav-bar">
-                <div class="container-logo-nav">
-                    <a href="./index.html"><img class="img-logo" src="./img/SIFLAR.png" alt="logo"></a>
-                </div>
-                <ul class="nav-bar">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="./pages/servicios.html">Servicios</a></li>
-                    <li><a href="./pages/contacto.html">Contacto</a></li>
-                    <li><a href="./pages/opiniones.html">Opiniones</a></li>
-                </ul>
-            </nav> -->
         </header>
 
         <main>
-                <section id="titulo" class="jumbotron text-center">
-                    <img class="img-titulo" src="./img/reparacion.jpg" alt="hombre_repara_pc">
-                    <H1>Servicio Tecnico en Computadoras</H1>  
-                </section>
+            <section id="titulo" class="jumbotron text-center">
+                <H1>Servicio Tecnico en Computadoras</H1> 
+            </section>
 
-            <div id="services" class="container-fluid text-center">
+            <section class="container-sm bienvenidos">
+                <h2>¡Bienvenidos a SifLar!</h2>
+                <p>Contamos con más de 20 años de experiencia en el mercado informático, especializandonos en pequeñas y medianas empresas que necesitan un soporte de computadoras confiable.</p>
+            </section>
+
+
+            <section id="services" class="container-fluid text-center">
                 <h2>SERVICIOS</h2>
 
-                <div class="row slideanim">
-                    <div class="col-sm-4">
-                        <span class="glyphicon glyphicon-off logo-small"></span>
+                <div class="row">
+                    <div class="col-lg-4">
                         <img src="./img/visitas.png" alt="visitas">
-                        <h3>Visitas</h3>
+                        <h3>VISITAS</h3>
                     </div>
 
-                    <div class="col-sm-4">
-                        <span class="glyphicon glyphicon-heart logo-small"></span>
+                    <div class="col-lg-4">
                         <img src="./img/mantenimiento.png" alt="mantenimiento">
-                        <h3>Mantenimiento</h3>
+                        <h3>MANTENIMIENTO</h3>
                     </div>
 
-                    <div class="col-sm-4">
-                        <span class="glyphicon glyphicon-lock logo-small"></span>
-                        <img src="./img/antivirus.png" alt="antivirus">
-                        <h3>Antivirus</h3>
+                    <div class="col-lg-4">
+                        <img class="icon-services" src="./img/antivirus.png" alt="antivirus">
+                        <h3>ANTIVIRUS</h3>
                     </div>
                 </div>
                 
-                <div class="row slideanim">
-                    <div class="col-sm-4">
-                        <!-- <p class="glyphicon glyphicon-leaf logo-small"></p> -->
+                <div class="row">
+                    <div class="col-lg-4">
                         <img src="./img/backups.png" alt="backups">
-                        <h3>Backups</h3>
+                        <h3>BACKUPS</h3>
                     </div>
                     
-                    <div class="col-sm-4">
-                        <span class="glyphicon glyphicon-certificate logo-small"></span>
+                    <div class="col-lg-4">
                         <img src="./img/asesoramiento.png" alt="asesoramiento">
-                        <h3>Asesoramiento</h3>
+                        <h3>ASESORAMIENTO</h3>
                     </div>
                     
-                    <div class="col-sm-4">
-                        <span class="glyphicon glyphicon-wrench logo-small"></span>
+                    <div class="col-lg-4">
                         <img src="./img/soporterem.png" alt="soporte_remoto">
-                        <h3>Soporte remoto</h3>
+                        <h3>SOPORTE REMOTO</h3>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-sm-12 container-vermas">
-                        <a class="vermas-link" href="./pages/servicios.html" target="_blank"><h3 class="vermas">VER MÁS</h3></a>  
+                        <a class="vermas-link" href="./pages/servicios.html" target="_blank"><button type="button" class="btn btn-outline-success">Más Info</button></a>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <section class="row img-adom">
+            <section class="row">
                 <div class="col-sm-12">
-                    <img class="img-adom" src="./img/soportetecnico.jpg" alt="serviciotecnico">
+                    <img class="img-adom img-fluid" src="./img/soportetecnico.jpg" alt="serviciotecnico">
                 </div>
             </section>
-    
+
             <section class="container-fluid teccap">
                 <h3 class="tecnicos container-fluid text-center">
                     TECNICOS CAPACITADOS PARA EL MANTENIMIENTO DE TUS COMPUTADORAS Y LAPTOS, PARA BRINDARTE EL MEJOR SERVICIO ESPECIALIZADO.
                 </h3>
             </section>
     
-            <section class="container-fluid marcas">
+            <section class="container-fluid marcas container-marcas-confian">
                 <h3 class="text-center container-sm">
                     MARCAS QUE CONFIAN EN NOSOTROS
                 </h3>
                 <img class="container-sm container-marcas" src="./img/maarcas.png" alt="marcas">
             </section>
-        
-            <!-- <div class="container text-center"> -->
-                
-                <!-- <h2 class="services">Servicios</h2>  
-                <div class="row"> -->
-                <!-- <section class="servicios1">       -->
-                    <!-- <article class="col-sm-12">
-                        <img src="./img/visitas.png" alt="visitas">
-                        <h3>Visitas</h3>
-                    </article>
-        
-                    <article class="col-sm-3">
-                        <img src="./img/mantenimiento.png" alt="mantenimiento">
-                        <h3>Mantenimiento</h3>
-                    </article>
-        
-                    <article class="col-sm-3">
-                        <img src="./img/antivirus.png" alt="antivirus">
-                        <h3>Antivirus</h3>
-                    </article>
-        
-                    <article class="col-sm-3">
-                        <img src="./img/backups.png" alt="backups">
-                        <h3>Backups</h3>
-                    </article> -->
-                <!-- </section> -->
-            <!-- </div> -->
-                    
-                <!-- <section class="servicios2">
-                    <article>
-                        <img src="./img/asesoramiento.png" alt="asesoramiento">
-                        <h3>Asesoramiento</h3>
-                    </article>
-        
-                    <article>
-                        <img src="./img/soporterem.png" alt="soporte_remoto">
-                        <h3>Soporte remoto</h3>
-                    </article>
-                </section>
-                    <div class="container-vermas">
-                        <a class="vermas-link" href="./pages/servicios.html" target="_blank"><h3 class="vermas">VER MÁS</h3></a>  
-                    </div>
-        
-                <section class="adomicilio">
-                    <h2 class="adom">Servicio Tecnico a domicilio</h2>
-                    <img class="img-adom" src="./img/serviciodom.png" alt="serviciotecnico">
-                </section>
-        
-                <section class="teccap">
-                    <h3 class="tecnicos">
-                        TECNICOS CAPACITADOS PARA EL MANTENIMIENTO DE TUS COMPUTADORAS Y LAPTOS, PARA BRINDARTE EL MEJOR SERVICIO ESPECIALIZADO.
-                    </h3>
-                </section>
-        
-                <section class="marcas">
-                    <h3>
-                        MARCAS QUE CONFIAN EN NOSOTROS
-                    </h3>
-                    <img class="container-marcas" src="./img/maarcas.png" alt="marcas">
-                </section> -->
-                
         </main>
 
-        
-            <div class="container-ws">
-                <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"><img class="img-ws" src="./img/WhatsApp_icon-removebg-preview.png" alt="whatsapp"></a>
-            </div>
+        <div class="container-ws">
+            <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"><img class="img-ws" src="./img/WhatsApp_icon-removebg-preview.png" alt="whatsapp"></a>
+        </div>
 
         <footer>
             <div class="container">
@@ -272,8 +198,6 @@
                     </div>
                 </div>
 
-                
-                
                 <div class="row text-center">
                     <div class="col-md-6 box">
                         

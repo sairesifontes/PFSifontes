@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- titulo pestaña -->
     <title>Contacto</title>
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=Alatsi&display=swap" rel="stylesheet">
+    <!-- icono pestaña -->
     <link rel="icon" href="../img/SIFLAR.ico">
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- css -->
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
@@ -16,7 +21,7 @@
 <body>
     <header>
         <!-- Menu bootstrap -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid container-navbar">
                 <div class="container-logo-nav">
                     <a href="./index.html"><img class="img-logo" src="../img/SIFLAR.png" alt="logo"></a>
@@ -27,7 +32,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./nosotros.html">Nosotros</a>
@@ -48,48 +53,80 @@
     </header>
 
     <main>
-        
 
         <div>
-            <img class="contacto-imagen" src="../img/call-center-rep.jpg" alt="call-center">
+            <img class="contacto-imagen img-lg" src="../img/call-center-rep.jpg" alt="call-center">
             <h2 class="contactanos">CONTÁCTANOS</h2>
         </div>
 
-        <section class="iconos">
-            <article>
-                <a href="https://goo.gl/maps/FMfVtdMGShVQXgaf7" target="_blank"><img  class="contacto-icon" src="../img/oficina.png" alt="oficina"></a>
-            </article>
 
-            <article>
-                <a href="mailto:sairesifontes@gmail.com"><img class="contacto-icon" src="../img/mail.png" alt="mail"></a>
-            </article>
+        <div class="iconos">
+            <div class="row icon">
+                <div class="col-sm-3">
+                    <article>
+                        <a href="https://goo.gl/maps/FMfVtdMGShVQXgaf7" target="_blank"><img  class="contacto-icon" src="../img/oficina.png" alt="oficina"></a>
+                    </article>
+                </div>
 
-            <article>
-                <a href="tel:+5491124083911"><img class="contacto-icon" src="../img/celular.png" alt="celular"></a>
-            </article>
+                <div class="col-sm-3">
+                    <article>
+                        <a href="mailto:sairesifontes@gmail.com"><img class="contacto-icon" src="../img/mail.png" alt="mail"></a>
+                    </article>
+                </div>
 
-            <article>
-                <a href="https://wa.me/5491124083911" target="_blank"><img class="contacto-icon" src="../img/ws.png" alt="whatsapp"></a>
-            </article>
-        </section>
+                <div class="col-sm-3">
+                    <article>
+                        <a href="tel:+5491124083911"><img class="contacto-icon" src="../img/celular.png" alt="celular"></a>
+                    </article>
+                </div>
 
-        <section class="container-formulario">
-            <form class="formulario">
-                <h4>Déjanos tu consulta</h4>
-                    <label for="fname"></label>
-                    <input type="text" name="fname" id="fname" placeholder="Ingrese su nombre">
-                    <label for="fmail"></label>
-                    <input type="email" name="fmail" id="fmail" placeholder="Ingrese su imail">
-                    <label for="fnumber"></label>
-                    <input type="tel" name="fnumber" id="fnumber" placeholder="Numero de telefono">
-                    <label for="fconsulta"></label>
-                    <textarea name="fconsulta" id="fconsulta" cols="30" rows="10" placeholder="Tu consulta"></textarea>
-                <input class="boton" type="submit" name="submit" id="submit">
-            </form>
+                <div class="col-sm-3">
+                    <article>
+                        <a href="https://wa.me/5491124083911" target="_blank"><img class="contacto-icon" src="../img/ws.png" alt="whatsapp"></a>
+                    </article>
+                </div>
+            </div>
+            
+        </div>
 
-            <div class="maps">
-                <h3>Encuentranos en</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0507943893167!2d-58.39267762524673!3d-34.6028770574521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac124a742eb%3A0x228237cab9f0c6d9!2sLavalle%201635%2C%20C1048%20CABA!5e0!3m2!1ses-419!2sar!4v1690936268993!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section>
+            <div id="contact" class="container-fluid bg-grey">
+                <h2 class="text-center contacto-form">CONTÁCTANOS</h2>
+                <div class="row">
+                    <div class="col-lg-5 informacion">
+                        <p>CABA, ARGENTINA</p>
+                        <p>+00 1515151515</p>
+                        <p>myemail@siflar.com</p>
+                    </div>
+
+                    <div class="col-lg-7 slideanim">
+                        <div class="row">
+                            <div class="col-lg-6 form-group">
+                                <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                            </div>
+                        
+                            <div class="col-lg-6 form-group">
+                                <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                            </div>
+                        </div>
+                        
+                        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+                        <div class="row">
+                            <div class="col-lg-12 form-group">
+                                <button class="btn btn-default pull-right boton" type="submit">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="maps">
+                        <h3>Encuentranos en</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0507943893167!2d-58.39267762524673!3d-34.6028770574521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac124a742eb%3A0x228237cab9f0c6d9!2sLavalle%201635%2C%20C1048%20CABA!5e0!3m2!1ses-419!2sar!4v1690936268993!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -103,7 +140,7 @@
             <div class="row">
                 <div class="col-md-3 footer-column">
                     <div class="derechos-footer">
-                        <img class="img-logosiftlar-footer" src="./img/SIFLAR.png" alt="">
+                        <img class="img-logosiftlar-footer" src="../img/SIFLAR.png" alt="">
                         <h3>Todos los derechos reservados.</h3>
                     </div>
                 </div>

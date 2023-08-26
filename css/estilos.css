@@ -18,8 +18,6 @@ html{
 font-family: 'Alata', sans-serif;
 font-family: 'Alatsi', sans-serif;
 
-
-
 /* coolors
 
 #FEC601 yellow
@@ -35,23 +33,31 @@ font-family: 'Alatsi', sans-serif;
 
 header{
     /* background-color: #32746D; */
-    background: rgb(29,69,23);
-    background: linear-gradient(90deg, rgba(29,69,23,1) 8%, rgba(50,116,114,1) 86%);
+    /* background: rgb(29,69,23);
+    background: linear-gradient(90deg, rgba(29,69,23,1) 8%, rgba(50,116,114,1) 86%); */
+    background-color: #243E36;
     position: sticky;
     /* height: 120px; */
     top: 0px;
     z-index: 10;
 }
 
+#navbarNav{
+    justify-content: end;
+    font-size: 2rem;
+}
+
+.nav-item{
+    /* background-color: #dcebe9; */
+    margin-right: 20px;
+}
+
+.nav-link{
+    color: #FEC601;
+}
 .container-logo-nav{
     width: 90px;
     height: 80px;
-}
-
-.container-nav-bar{
-    display: flex;
-    align-items: end;
-    justify-content: space-evenly;
 }
 
 
@@ -61,146 +67,91 @@ header{
 }
 
 
-.nav-bar li{
-    list-style: none;
-    margin-left: 20px;
-}
-
-.nav-bar a{
-    text-decoration: none;
-    font-size: 2.5rem;
-    color: #FEC601;
-    font-family: 'Alata', sans-serif;
-    margin-left: 20px;
-    /* padding: 10px; */
-}
-
-a:hover{
-    color: #b1eca9;
-}
-
-.nav-bar{
-    text-align: right;
-    margin-top: -40px;
-    display: flex;
-}
-
-
 /* PAGINA INDEX */
 
 /* titulo e imagen */
 
 #titulo h1{
-    font-size: 7rem;
-    margin-bottom: 180px;
-    height: 150px;
+    font-size: 5rem;
+    height: 350px;
     text-align: center;
     font-family: 'Alata', sans-serif;
-    color: #073a35;
+    color: #FEC601;
     background-color: #fffaf18a;
-    z-index: 4;
-    position: relative;
-    margin-top: -350px;
-    padding: 30px;
-    text-align: center;
-    
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/software-reparacion-pc.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    padding: 100px;
+    font-weight: bold;
 }
 
-.img-titulo{
+/* Bienvenidos */
+
+.bienvenidos{
+    /* background-color: #32746D; */
+    margin-top: 50px;
+    text-align: center;
+    font-size: 2rem;
     width: 100%;
-    height: 500px;
-    margin-top: 5px;
-    z-index: 3;
-    position: relative;
-    margin-bottom: 20px;
+    background-image: url(../img/infobox.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    opacity: 0.99;
 }
+
+.bienvenidos h2{
+    font-size: 3rem;
+    margin-bottom: 25px;
+    font-weight: bold;
+    color: #FEC601;
+}
+
 
 /* servicios */
 
+#services{
+    background-image: url(../img/infobox.png);
+    background-position: center center;
+    background-repeat: repeat-x;
+    background-size: auto;
+    opacity: 0.99;
+}
+
 #services h2{
     font-size: 3.8rem;
-    padding: 35px;
-    margin-top: 250px;
-    margin-bottom: 100px;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 80px;
     background-color: #FEC601;
     text-align: center;
+    font-family: 'Alatsi', sans-serif;
 }
 
-.servicios1{
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    margin-left: -80px;
-    text-align: center;
+#services h3{
+    font-family: 'Alatsi', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 30PX;
+    color:#21a337d8;
+    color: #243E36;
 }
 
-.servicios1 h3, .servicios2 h3{
-    font-size: 2.5rem;
-    font-family: 'Alata', sans-serif;
-}
+/* Boton vermas */
 
-.servicios2{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    margin-left: -80px;
-    margin-top: 40px;
-    text-align: center;
-}
-
-article{
-    margin-left: 80px;
-} 
-
-
-.vermas{
-    margin-top: 80px;
-    border-radius: 50px;
-    background-color: rgb(10, 177, 113);
-    text-align: center;
-    font-size: 1.5rem;
+.btn{
+    margin: 40px 50px;
     width: 100px;
-    margin-bottom: 80px;
-    padding: 5px;
+    height: 40px;
 }
 
-.container-vermas{
-    display: flex;
-    justify-content: center;
-}
-
-.vermas-link{
-    text-decoration: none;
-    color: black;
-}
 
 /*servicio a domicilio*/
 
-.adomicilio{
-    font-size: 8rem;
-    height: 80px;
-    /* padding: 60px; */
-    /* display: inline; */
-    display: flex;
-    justify-content: center;
-    /* background-color: #b1eca9; */
-}
-
-.adom{
-    font-size: 4rem;
-    display: flex;
-    justify-content: center;
-}
-
 .img-adom{
     width: 100%;
+    height: 350px;
     margin-top: 20px;
-}
-
-.adomicilio{
-    display: flex;
-    background-color: #e7ca5f;
-    justify-content: center;
 }
 
 /* tecnicos capacitados*/
@@ -214,22 +165,15 @@ article{
     text-align: center;
 }
 
-.teccap{
-    height: 50px;
-    margin-top: 80px;
-}
-
-/* marcas */
+/* marcas que confian*/
 
 .marcas{
     text-align: center;
     left: 50px;
-    margin-top: 200px;
     font-size: 3rem;
 }
 
 .container-marcas{
-    text-align: center;
     margin-top: 8px;
     margin-bottom: 25px;
 }
@@ -249,6 +193,20 @@ article{
 
 /* footer */
 
+footer{
+    /* background: rgb(29,69,23);
+    background: linear-gradient(90deg, rgba(29,69,23,1) 8%, rgba(50,116,114,1) 86%); */
+    background-color: #243E36;
+    width: 100%;
+    color: #f9efe8;
+    font-weight: bold;
+    padding-top: 25px;
+    margin-top: 40px;
+}
+
+.nav-link:hover{
+    color: #f9efe8;
+}
 
 .footer-column{
     display: flex;
@@ -258,53 +216,10 @@ article{
 
 .footer-column a, .footer-column p{
     text-decoration: none;
-    color: #dcebe9;
-
-}
-
-    
-footer{
-    background: rgb(29,69,23);
-    background: linear-gradient(90deg, rgba(29,69,23,1) 8%, rgba(50,116,114,1) 86%);
-    width: 100%;
-    color: #FEC601;
-    padding-top: 25px;
-    margin-top: 40px;
-}
-
-.fab{
+    /* color: #dcebe9; */
     color:#FEC601;
-}
+    font-size: 1.2rem;
 
-.box2{
-    padding: 5px;
-}
-
-.box2 h2{
-    font-size: 2rem;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
-
-.content-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-
-}
-
-.redes{
-    text-align: center;
-    margin-left: -20px;
-    display: flex;
-    justify-content: center;
-}
-
-.img-redes-footer{
-    width: 20px;
-    height: 20px;
-    margin: 20px 25px;
 }
 
 .img-logosiftlar-footer{
@@ -312,173 +227,252 @@ footer{
     height: 70px;
 }
 
-.derechos{
-    display: flex;
-    align-items: center;
-}
 
-.derechos h3{
-    font-size: 2rem;
-}
-
-/* PAGINA NOSOTROS */
+/* ------------------------------------- PAGINA NOSOTROS ------------------------------------- */
 
 /* imagen */
 
 .banner{
     background-image: url(../img/banner1.jpg);
+    background-position: center;
+    background-size: cover;
     height: 280px;
     margin-top: 50px;
 }
 
-/* Contenedores de historia y Vision de Siflar   (Imagen izquierda y texto a la derecha)*/
+/* contenedor de "quienes somos" y "Vision */
 
-.container-img-tex h3, .container-img-tex2 h3{
-    padding: 20px;
-    /* position: relative; */
-    /* z-index: 2; */
-    margin-bottom: -70px;
-    text-align: center;
-}
-
-.container-img-tex{
-    font-size: 2.5rem;
-    margin: 50px; 
-    margin-left: 80px;
-    font-family: 'Alata', sans-serif;
-    z-index: 1;
+.separador{
+    margin-top: -20px;
 }
 
 .imagen{
-    width: 400px;
-    height: 350px;
-    float: left;
+    width: auto;
+    height: 300px;
+    margin: 20px 0px;
 }
 
-.tex{
-    padding: 80px ;
+/* imagen vision */
+.imagen-2{
+    width: auto;
+    height: 230px;
+}
+
+/* contenedor imagen y texto */
+.container-img-tex{
+    display: flex;
+    align-items: center;
+    margin: 50px 30px;
+    /* background-color: #243E36; */
+    
+}
+
+/* titulos */
+.container-img-tex h3, .container-img-tex2 h3{
     text-align: center;
+    margin-top: 50px;
+    font-size: 4.5rem;
+    /* background-color: #243E36; */
 }
 
-.container-texto{
-    font-size: 4rem;
-    color: #32746D;
+.container-img-tex p, .container-img-tex2 p{
+    font-size: 2.8rem;
+    text-align: center;
+    padding: 30px;
+    /* margin: 20px 50px; */
+    /* background-color: #e7ca5f; */
 }
 
-/* Contenedores de mision y valores de Siflar  (Imagen a la derecha y texto a la izquierda)*/
 
+/* contenedor de  "mision" y "valores" */
 
 .container-img-tex2{
-    font-size: 2.4rem;
-    display: inline;
-    font-family: 'Alata', sans-serif;
-    margin-right: 30px;
-    z-index: 1;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 50px 30px;
+    /* background-color: #243E36; */
+    align-items: center;
 }
 
-.tex2{
-    padding: 50px;
-    margin: 60px 60px 50px 60px;
-    height: 190px;
+/*-- Factores diferenciales --*/
+
+
+.container-fact-dif{
+    /* background-color: #ffe792; */
+    border-radius: 50px;
+    box-shadow: 2px 10px 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.factores{
+    background-color: #436d60;
     text-align: center;
+}
+
+.factores h2{
+    font-size: 4rem;
+    margin-top: 10px;
+    color:white;
+}
+
+.factores p{
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(230, 221, 221);
+}
+
+.container-factores{
+    /* background-color: #243E36; */
+    display: flex;
+    align-items: center;
+}
+
+.container-factores p{
+    font-size: 2rem;
+    padding: 20px;
+    text-align: left;
 
 }
 
-.img, .img2{
-    width: 400px;
-    height: 290px;
-    float: right;
-    margin-right: 80px;
+.container-factores h3 {
+    text-align: left;
+    margin-top: 50px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: -10px;
+    margin-left: 20px;
 }
 
-
-
-
-/* PAGINA DE SERVICIOS */
+/*------------------------- PAGINA DE SERVICIOS -------------------*/
 
 /* imagen */
 
-.fancooler{
-    width: 100%;
-    height: 300px;
-    margin-top: 20px;
+.fancooler-bg{
+    background-image: url(../img/fancooler.jpg);
+    background-position: bottom center;
+    background-size: cover;
+    height: 280px;
+    margin-top: 50px;
 }
+
+/* titulo servicios */
 
 .page-services{
     font-size: 3.5rem;
     padding: 20px;
     margin-top: 50px;
-    /* background-color: #FEC601;  */
     background: rgb(254,198,1);
     background: radial-gradient(circle, rgba(254,198,1,1) 0%, rgba(50,116,109,1) 100%);
     text-align: center;
 }
 
-/* Servicios titulo*/
+/* Cartas de servicios*/
 
-.nuestros-servicios{
+.card{
+    /* background-color: #243E36; */
+    margin-top: 30px;
+    margin-bottom: 30px;
     text-align: center;
-    margin-top: 50px;
-    display: flex;
+    align-items: center;
+    /* border: #073a35; */
+    box-shadow: 2px 10px 10px;
+    height: 400px;
 }
 
-.def-servicios{
-    font-size: 1.5rem;
-    width: 600px;
-    margin: 30px;
-    margin-bottom: 80px;
-    border-radius: 30px;
-    font-family: 'Alata', sans-serif;
-    background-color: #e7ca5f;
-    padding: 15px;
+/* imagen cada servicio */
+.img-servicio{
+    width: 200px;
+    
 }
 
-.def-servicios h3, .def-servicios p{
-    margin-top: 20px;
+/* titulo */
+.card-title{
+    font-size: 2.3rem;
+    margin-bottom: 20px;
 }
 
-/* PAGINA CONTACTO */
+/* descripcion */
+.card-text{
+    font-size: 1.8rem;
+}
+
+
+/* --------------------- PAGINA CONTACTO -------------------------- */
 
 /* imagen */
-
-
 .contacto-imagen{
     width: 100%;
     height: 400px;
     margin-top: 10px;
-    
 }
 
+/* titulo */
 .contactanos{
     text-align: center;
     margin-top: 40px;
     font-size: 3rem;
+    background-image: url(../img/infobox.png);
+    background-position: bottom center;
+    background-repeat: repeat;
+    background-size: auto;
+    opacity: 0.99;
 }
 
+/* iconos contacto */
 .iconos{
-    /* margin: 50px 30px 30px 100px; */
+    display: flex;
+    flex-direction: column;
     text-align: center;
     margin-top: 50px;
-    display: flex;
-    justify-content: space-evenly;
 }
 
 .contacto-icon{
     width: 150px;
     height: 150px;
-}
-
-/* formulario */
-
-
-.container-formulario{
-    margin-bottom: 100px;
-    display: flex;
-    justify-content: space-evenly;
     margin-top: 50px;
 }
 
 
+/* formulario */
+.contacto-form{
+    font-size: 3rem;
+    color: #FEC601;
+}
+
+.form-control{
+    margin-top: 50px;
+    height: 40px;
+    font-size: 1.8rem;
+}
+
+#contact{
+    background-color: #32746D;
+    margin-top: 100px;
+    padding: 50px;
+    border-radius: 80px;
+}
+
+/* descripcion */
+.informacion p{
+    text-align: center;
+    font-size: 2.2rem;
+    margin-top: 20px;
+    color: #f9efe8;
+}
+
+/* boton enviar */
+.boton{
+    background-color: #FEC601;
+    color: #dcebe9;
+    font-size: 1.8rem;
+}
+
+.boton:hover{
+    background-color: #32746D;
+}
+/* 
 .formulario{
     background-color: #32746D;
     width: 400px;
@@ -486,71 +480,35 @@ footer{
     color: black;
     font-size: 1.8rem;
     padding: 40px;
-    /* margin-left: 80px; */
     margin-top: 100px;
     border-radius: 20px;
 }
 
-.formulario h4{
-    margin-bottom: 20px;
-    color:#FEC601;
-    font-size: 30px;
-
-}
-
-input, textarea{
-    padding: 10px;
-    font-size: 15px;
-    color: #32746D;
-    margin-bottom: 80px;
-    border-radius: 20px;
-    background-color: #f9efe8;
-    width: 100%;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid black;
-    font-family: 'Alata', sans-serif;
-}
-
-label{
-    color: #ff7700;
-    font-size: 17px;
-    margin-bottom: 10px;
-    margin-top: 20px;
-}
-
-.boton{
-    background-color: #ff7700;
-    width: 100px;
-    height: 40px;
-    margin-bottom: 50px;
-    border-radius: 50px;
-    color: white;
-    float: right;
-}
-
 /* iframe maps */
+.maps{
+    text-align: center;
+}
 
 iframe{
-    width: 700px;
-    height: 350px;
+    width: 100%;
+    height: 450px;
 }
 
 .maps h3{
-    font-size: 2.5rem;
-    margin-top: 150px;
+    font-size: 2.9rem;
+    margin-top: 80px;
     margin-bottom: 20px;
     color: #FEC601;
 }
 
 
-/* PAGINA OPINIONES */
+/* ------------------- PAGINA OPINIONES ----------------------------------- */
 
-.clientes{
+/* titulo */
+.opinion-clientes h2{
     text-align: center;
     margin-top: 50px;
-    font-size: 3rem;
-    color:#32746D
+    font-size: 3.8rem;
 }
 
 .imagen-opi{
@@ -569,25 +527,32 @@ iframe{
 
 
 .card-container{
-    display: flex;
-    width: 700px;
-    height: auto;
-    background-color: #f9efe8;
-    border-radius: 2 px;
+    width: 800px;
+    height: 400px;
+    background-color: #f9f5e8;
+    border-radius: 30px;
     box-shadow: 1px 1px 4px 2px black;
     margin-bottom: 50px;
 
 }
 
+.container-img-opinion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .arriba h2{
     text-align: center;
     margin-bottom: 20px;
+    margin-left: 20px;
     color: #FEC601;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
 }
 
 .arriba p{
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
     margin-top: -10px;
     color: #073a35;
@@ -595,43 +560,14 @@ iframe{
 
 .opinion{
     text-align: center;
-    margin-top: 80px;
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin-right: 10px;
-}
-
-.arriba .opinion{
     padding: 20px;
-    text-align: center;
-    margin-right: 20px;
-    background-color: aqua;
 }
 
 .carousel-control-prev:hover, .carousel-control-next:hover{
     background-color: #dcebe9;
 }
-
-
-
-/* RESPONSIVE BOOTSTRAP MODIFICACIONES CSS*/
-
-/* HEADER */
-
-.headerNavBar{
-    background-color: #32746D;
-}
-
-#navbarNav{
-    display: flex;
-    background-color: #32746D;
-    justify-content: end;
-    font-size: 2rem;
-}
-
-
-
-
-
 
 
 /* media Querys */
@@ -640,11 +576,39 @@ iframe{
 @media (max-width: 990px)
 {
 
+    /* modificaciones pag index */
     #navbarNav{
-        background-color: #e7ca5f;
         justify-content: center;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
+    }
+
+    #titulo h1{
+        font-size: 4rem;
+        text-align: left;
+        padding: 20px;
+        text-align: center;
+
+    }
+
+    /* modificaciones pagina opiniones */
+    .opinion{
+        text-align: center;
+        font-size: 1.8rem;
+        margin-right: 10px;
+        padding: 2px;
+    }
+
+    /* modificaciones para la pagina nosotros */
+    .container-img-tex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-img-tex2{
+        display: flex;
+        flex-direction: column;
     }
 
 }

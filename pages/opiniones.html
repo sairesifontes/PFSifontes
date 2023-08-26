@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- titulo pestaña -->
     <title>Opiniones</title>
-    
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=Alatsi&display=swap" rel="stylesheet">
+    <!-- icono pestaña -->
     <link rel="icon" href="../img/SIFLAR.ico">
+    <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- css -->
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
@@ -17,7 +21,7 @@
 <body>
     <header>
         <!-- Menu bootstrap -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid container-navbar">
                 <div class="container-logo-nav">
                     <a href="./index.html"><img class="img-logo" src="../img/SIFLAR.png" alt="logo"></a>
@@ -28,7 +32,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./nosotros.html">Nosotros</a>
@@ -49,25 +53,13 @@
     </header>
 
 
-    <main>
+<main>
 
-        <!--    <div class="container-opiniones">
-                    <div class="card-container">
-                        <div class="arriba">
-                            <a href="#">
-                                <img class="imagen-opi" src="../img/chicaopinion.png" alt="">
-                            </a>
-                            <h2>saire</h2>
-                        </div>
-                        
-                        <div class="opinion">
-                            <p>Excelente atención y manejo del problema que presentaba mi empresa con los equipos de computo. Sin lugar a dudas, vuelvo con ellos.</p>
-                        </div>
-                    </div>
-                </div>
-            -->
+    <section class="opinion-clientes container-lg">
+        <h2>Lo que nuestros clientes opinan de nosotros</h2>
+    </section>
 
-    <div id="carouselExampleIndicators" class="carousel slide">
+    <div id="carouselExampleIndicators" class="carousel slide container-sm">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -78,12 +70,13 @@
             <div class="carousel-item active">
                 <div class="container-opiniones">
                     <div class="card-container">
-                        <div class="arriba">
-                            <img class="imagen-opi" src="../img/chicaopinion.png" alt="">
-                            <h2>Ana Laura Gomez</h2>
-                            <p>Obispado S.A</p>
+                        <div class="container-img-opinion">
+                            <img class="imagen-opi rounded" src="../img/chicaopinion.png" alt="">
+                            <div class="arriba"> 
+                                <h2>Ana Laura Gomez</h2>
+                                <p>Obispado S.A</p>
+                            </div>
                         </div>
-                        
                         <div class="opinion">
                             <p>Excelente atención y manejo del problema que presentaba mi empresa con los equipos de computo. Sin lugar a dudas, vuelvo con ellos.</p>
                         </div>
@@ -94,12 +87,13 @@
             <div class="carousel-item">
                 <div class="container-opiniones">
                     <div class="card-container">
-                        <div class="arriba">
-                            <img class="imagen-opi" src="../img/jose-removebg-preview.png" alt="">
-                            <h2>Jose Luis Andrade</h2>
-                            <p>Penta Consultoria C.A</p>
+                        <div class="container-img-opinion">
+                            <img class="imagen-opi rounded" src="../img/jose-removebg-preview.png" alt="">
+                            <div class="arriba">
+                                <h2>Jose Luis Andrade</h2>
+                                <p>Penta Consultoria C.A</p>
+                            </div>
                         </div>
-
                         <div class="opinion">
                             <p>Desde hace muchos años contamos con la atención personalizada de SIFTLAR y estamos muy satisfechos con su servicio, con un total compromiso y un excelente desempeño.</p>
                         </div>
@@ -110,12 +104,13 @@
             <div class="carousel-item">
                 <div class="container-opiniones">
                     <div class="card-container">
-                        <div class="arriba">
-                            <img class="imagen-opi" src="../img/Adriana.png" alt="">
-                            <h2>Adriana Hernandez</h2>
-                            <p>Softland Argentina S.A</p>
+                        <div class="container-img-opinion">
+                            <img class="imagen-opi rounded" src="../img/Adriana.png" alt="">
+                            <div class="arriba">
+                                <h2>Adriana Hernandez</h2>
+                                <p>Softland Argentina S.A</p>
+                            </div>
                         </div>
-
                         <div class="opinion">
                             <p>SIFTLAR nos brindó siempre un servicio informático de calidad superior, destacándose la velocidad de respuesta y de ejecución, su eficacia y excelente atención de todo su personal.</p>
                         </div>
