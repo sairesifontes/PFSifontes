@@ -1,0 +1,58 @@
+@use 'variables';
+@import 'mixin';
+
+header{
+    background-color: variables.$color-green;
+    top: 0px;
+    position: sticky;
+    z-index: 10;
+
+    .container-logo-nav{
+        width: variables.$size-px * 9;
+        height: variables.$size-px * 8;
+
+        .img-logo{
+            width: variables.$size-completo;
+            height: variables.$size-completo;
+        }
+    }
+
+    .navbar-toggler{
+        color: variables.$color-yellow;
+    }
+
+    #navbarNav{
+        justify-content: end;
+        font-size: variables.$sizeR * 1.5;
+
+        @include mobile{
+            justify-content: variables.$centro;
+            text-align: variables.$centro;
+            font-size: variables.$sizeR + 0.5;
+        }
+
+        .nav-item{
+            margin-right: variables.$size-px * 2;
+
+            .nav-link{
+                color: variables.$color-yellow;
+                margin-left: variables.$size-px * 2;
+
+                &:hover{
+                    color: variables.$color-claro;
+                }
+        
+
+                .fa-solid{
+                    margin-right: 10px;
+                    color: variables.$color-yellow;
+
+                    &:hover{
+                        color: variables.$color-claro;
+                    }
+                }
+            }
+        }
+    }
+}
+

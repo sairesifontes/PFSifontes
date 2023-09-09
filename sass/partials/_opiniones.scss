@@ -1,0 +1,93 @@
+@use 'variables';
+@import 'mixin';
+@import 'extend';
+
+.opinion-clientes{
+    h1{
+        text-align: variables.$centro;
+        margin-top: variables.$size-px * 5;
+        font-size: variables.$sizeR * 3.8;
+    }
+
+    @include mobile{
+        h1{
+            font-size: variables.$sizeR + 1.5;
+        }
+    }
+}
+
+.container-opiniones{
+    display: flex;
+    align-items: variables.$centro;
+    justify-content: variables.$centro;
+    margin-top: variables.$size-px * 8;
+    padding: 0 variables.$size-px + 10;
+
+    .card-container{
+        width: variables.$size-px * 80;
+        height: variables.$size-px * 40;
+        background-color: #f9f5e8;
+        border-radius: variables.$size-px * 3;
+        box-shadow: 1px 1px 4px 2px black;
+        margin-bottom: variables.$size-px * 5;
+
+        .container-img-opinion{
+            
+            @extend .flex-center;
+
+            .imagen-opi{
+                width: variables.$size-px * 20;
+                height: variables.$size-px * 20;
+                margin: ((variables.$size-px * 2) (variables.$size-px * 2) (variables.$size-px * 2) (variables.$size-px * 4));      
+            }
+
+            .arriba{
+                h2{
+                    text-align: variables.$centro;
+                    margin-bottom: variables.$size-px * 2;
+                    margin-left: variables.$size-px * 2;
+                    color: variables.$color-yellow;
+                    font-size: variables.$sizeR + 1.8;
+                }
+
+                p{
+                    font-size: variables.$sizeR + 1;
+                    text-align: variables.$centro;
+                    margin-top: variables.$size-px - 20;
+                    color: #073a35;
+                }
+
+                @include mobile{
+                    h2{
+                        font-size: variables.$sizeR + 1.2;
+                    }
+
+                    p{
+                        font-size: variables.$sizeR;
+                    }
+                }
+
+            }
+        }
+
+        .opinion{
+            text-align: variables.$centro;
+            font-size: variables.$sizeR + 0.5;
+            margin-right:  variables.$size-px;
+            padding: variables.$size-px + 10;
+
+            @include mobile{
+                text-align: variables.$centro;
+                font-size: variables.$sizeR + 0.2;
+                margin-right: variables.$size-px;
+                padding: variables.$size-px - 8;
+            }
+        }
+    }
+}
+
+
+.carousel-control-prev:hover, .carousel-control-next:hover{
+    background-color: #dcebe9;
+}
+

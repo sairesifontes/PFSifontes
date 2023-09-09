@@ -1,0 +1,35 @@
+@use 'variables';
+
+footer{
+    background-color: variables.$color-green;
+    width: variables.$size-completo;
+    color: variables.$color-claro;
+    font-weight: bold;
+    padding-top: variables.$size-px * 2.5;
+    margin-top: variables.$size-px * 4;
+
+    .nav-link:hover{
+        color: variables.$color-claro;
+    }
+
+    .footer-column{
+        display: flex;
+        text-align: variables.$centro;
+        justify-content: space-evenly;
+
+        a, p{
+            text-decoration: none;
+            color: variables.$color-yellow;
+            font-size: variables.$sizeR * 1.2;
+        }
+
+        .img-logosiftlar-footer{
+            width: variables.$size-px * 7;
+            height: variables.$size-px * 7;
+        }
+    }
+
+    .fa-brands{
+        color: variables.$color-yellow;
+    }
+}

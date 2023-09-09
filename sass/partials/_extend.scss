@@ -1,0 +1,15 @@
+@use 'variables';
+
+
+// index
+.bg-img{
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+// opiniones
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

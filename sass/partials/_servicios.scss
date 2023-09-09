@@ -1,0 +1,58 @@
+@use 'variables';
+
+section{
+    margin-top: variables.$size-px * 8;
+
+    .fancooler-bg{
+        background-image: url(../img/fancooler.jpg);
+        background-position: center center;
+        background-size: 100% 100%;
+        height: variables.$size-px * 28;
+        margin-top: variables.$size-px * 5;
+
+    }
+
+    .page-services{
+        font-size: variables.$sizeR + 2.5;
+        padding: variables.$size-px + 10 ;
+        margin-top: variables.$size-px * 8;
+        background: rgb(254,198,1);
+        background: radial-gradient(circle, rgba(254,198,1,1) 0%, rgba(50,116,109,1) 100%);
+        text-align: variables.$centro;
+    }
+}
+
+.card{
+
+    margin-top: variables.$size-px * 3;
+    margin-bottom: variables.$size-px * 3;
+    text-align: variables.$centro;
+    align-items: variables.$centro;
+    box-shadow: (variables.$size-px - 8) (variables.$size-px) (variables.$size-px);
+    height: variables.$size-px * 40;
+    z-index: 1;
+
+    .img-servicio{
+        width: variables.$size-px * 20;
+    }
+    
+    .card-body{
+
+        .card-title{
+            font-size: variables.$sizeR + 1;
+            margin-bottom: variables.$size-px + 20;
+        }
+
+        .card-text{
+            font-size: variables.$sizeR + 0.2;
+
+        }
+    }
+
+    &:hover{
+        background-color: rgb(240, 240, 95);
+        height: 400px;
+        box-shadow: 5px 1px 10px rgba(255, 253, 120, 0.2);
+    }
+
+}

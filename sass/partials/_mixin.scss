@@ -1,0 +1,28 @@
+@use 'variables';
+
+// responsive
+@mixin mobile{
+    @media screen and (max-width: (variables.$size-px * 99)) {
+        @content;
+    }   
+}
+
+
+
+// nosotros
+@mixin parrafo{
+    font-size: variables.$sizeR * 2;
+    text-align: variables.$centro;
+    padding: variables.$size-px * 3;
+}
+
+@mixin subtitulo{
+    text-align: variables.$centro;
+    margin-top: variables.$size-px * 5;
+    font-size: variables.$sizeR + 2;
+}
+
+@mixin flexColumn{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,100 @@
+@use 'variables';
+
+div{
+    .contacto-imagen{
+        width: variables.$size-completo;
+        height: variables.$size-px * 40;
+        margin-top: variables.$size-px;
+    }
+
+    .contactanos{
+        text-align: variables.$centro;
+        margin-top: variables.$size-px * 8;
+        margin-bottom: variables.$size-px * 8;
+        font-size: variables.$sizeR + 2;
+        background-image: url(../img/infobox.png);
+        background-position: bottom center;
+        background-repeat: repeat;
+        background-size: auto;
+        opacity: 0.99;
+    }
+}
+
+.iconos{
+    display: flex;
+    flex-direction: column;
+    text-align: variables.$centro;
+    margin-top: variables.$size-px * 5;
+
+    .contacto-icon{
+        width: variables.$size-px * 19;
+        height: variables.$size-px + 200;
+        margin-top: variables.$size-px * 5;
+        
+
+        &:hover{
+            width: 200px;
+        }
+    }
+}
+
+#contact{
+
+    background-color: #32746D;
+    margin-top: variables.$size-px * 10;
+    width: 90%;
+    padding: variables.$size-px + 40;
+    border-radius: variables.$size-px * 8;
+
+    .contacto-form{
+        font-size: variables.$sizeR + 2;
+        color: variables.$color-yellow;
+    }
+
+    .informacion{
+        p{
+            text-align: variables.$centro;
+            font-size: variables.$sizeR + 1;
+            margin-top: variables.$size-px + 10;
+            color: variables.$color-claro;
+        }
+    }
+
+    .boton{
+        background-color: variables.$color-yellow;
+        color: #dcebe9;
+        font-size: variables.$sizeR + 0.8;
+
+        &:hover{
+            background-color: #32746D;;
+        }
+    }
+    
+    .form-control{
+        margin-top: variables.$size-px * 5;
+        height: variables.$size-px + 30;
+        font-size: variables.$sizeR + 0.8;
+    }
+}
+
+.maps{
+
+    h2{
+        font-size: variables.$sizeR + 1.9;
+        margin-top: variables.$size-px + 70;
+        margin-bottom: variables.$size-px + 30;
+        text-align: variables.$centro;
+        color: variables.$color-yellow;
+    }
+
+    .container-mapa{
+
+        display: flex;
+        justify-content: center;
+
+        iframe{
+            width: 90%;
+            height: variables.$size-px * 45;
+        }
+    }
+}
