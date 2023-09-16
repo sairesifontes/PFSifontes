@@ -22,6 +22,7 @@
     justify-content: variables.$centro;
     margin-top: variables.$size-px * 8;
     padding: 0 variables.$size-px + 10;
+    
 
     .card-container{
         width: variables.$size-px * 80;
@@ -30,6 +31,7 @@
         border-radius: variables.$size-px * 3;
         box-shadow: 1px 1px 4px 2px black;
         margin-bottom: variables.$size-px * 5;
+        
 
         .container-img-opinion{
             

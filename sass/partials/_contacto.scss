@@ -1,10 +1,12 @@
 @use 'variables';
+@import 'mixin';
 
 div{
     .contacto-imagen{
         width: variables.$size-completo;
         height: variables.$size-px * 40;
         margin-top: variables.$size-px;
+        
     }
 
     .contactanos{
@@ -45,10 +47,15 @@ div{
     width: 90%;
     padding: variables.$size-px + 40;
     border-radius: variables.$size-px * 8;
+    padding: 50px;
 
     .contacto-form{
         font-size: variables.$sizeR + 2;
         color: variables.$color-yellow;
+
+        @include mobile{
+            font-size: variables.$sizeR + 0.8;
+        }
     }
 
     .informacion{
@@ -57,6 +64,10 @@ div{
             font-size: variables.$sizeR + 1;
             margin-top: variables.$size-px + 10;
             color: variables.$color-claro;
+
+            @include mobile{
+                font-size: variables.$sizeR;
+            }
         }
     }
 

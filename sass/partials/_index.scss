@@ -21,7 +21,7 @@
 
     @include mobile{
         h1{
-            font-size: variables.$sizeR + 1.8;
+            font-size: variables.$sizeR + 1.5;
             text-align: left;
         }
     }
@@ -97,6 +97,8 @@
     width: variables.$size-completo;
     height: variables.$size-px * 35;
     margin-top: variables.$size-px * 2;
+
+    
 }
 
 .tecnicos{
