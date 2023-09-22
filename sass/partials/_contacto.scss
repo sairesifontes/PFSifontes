@@ -1,6 +1,12 @@
 @use 'variables';
 @import 'mixin';
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 div{
     .contacto-imagen{
         width: variables.$size-completo;
@@ -33,7 +39,6 @@ div{
         height: variables.$size-px + 200;
         margin-top: variables.$size-px * 5;
         
-
         &:hover{
             width: 200px;
         }
@@ -90,6 +95,8 @@ div{
 
 .maps{
 
+    width: auto;
+
     h2{
         font-size: variables.$sizeR + 1.9;
         margin-top: variables.$size-px + 70;
@@ -104,8 +111,10 @@ div{
         justify-content: center;
 
         iframe{
-            width: 90%;
+            width: 80%;
             height: variables.$size-px * 45;
         }
+
+        
     }
 }

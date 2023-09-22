@@ -172,6 +172,7 @@ footer .fa-brands {
   padding: 50px;
   font-size: 2.2rem;
   text-align: center;
+  font-family: "Mooli", sans-serif;
 }
 
 .marcas {
@@ -377,6 +378,12 @@ section .page-services {
   box-shadow: 5px 1px 10px rgba(255, 253, 120, 0.2);
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 div .contacto-imagen {
   width: 100%;
   height: 400px;
@@ -451,6 +458,9 @@ div .contactanos {
   font-size: 1.8rem;
 }
 
+.maps {
+  width: auto;
+}
 .maps h2 {
   font-size: 2.9rem;
   margin-top: 80px;
@@ -463,7 +473,7 @@ div .contactanos {
   justify-content: center;
 }
 .maps .container-mapa iframe {
-  width: 90%;
+  width: 80%;
   height: 450px;
 }
 
