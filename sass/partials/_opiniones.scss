@@ -25,13 +25,12 @@
     
 
     .card-container{
-        width: variables.$size-px * 80;
+        width: variables.$size-px * 90;
         height: variables.$size-px * 40;
         background-color: #f9f5e8;
         border-radius: variables.$size-px * 3;
         box-shadow: 1px 1px 4px 2px black;
         margin-bottom: variables.$size-px * 5;
-        
 
         .container-img-opinion{
             
@@ -40,32 +39,34 @@
             .imagen-opi{
                 width: variables.$size-px * 20;
                 height: variables.$size-px * 20;
-                margin: ((variables.$size-px * 2) (variables.$size-px * 2) (variables.$size-px * 2) (variables.$size-px * 4));      
+                margin: ((variables.$size-px * 2) (variables.$size-px * 2) (variables.$size-px * 2) (variables.$size-px * 4));  
             }
 
             .arriba{
                 h2{
                     text-align: variables.$centro;
+                    margin-top: variables.$size-px * 5;
                     margin-bottom: variables.$size-px * 2;
-                    margin-left: variables.$size-px * 2;
+                    margin-left: variables.$size-px * 3;
                     color: variables.$color-yellow;
                     font-size: variables.$sizeR + 1.8;
+
+                    @include mobile{
+                        font-size: variables.$sizeR + 0.5;
+                        margin-left: variables.$size-px - 11;
+                    }
                 }
 
                 p{
                     font-size: variables.$sizeR + 1;
                     text-align: variables.$centro;
-                    margin-top: variables.$size-px - 20;
+                    margin-top: variables.$size-px + 20;
                     color: #073a35;
-                }
 
-                @include mobile{
-                    h2{
-                        font-size: variables.$sizeR + 1.2;
-                    }
-
-                    p{
-                        font-size: variables.$sizeR;
+                    @include mobile{
+                        font-size: variables.$sizeR - 0.2;
+                        margin-left: variables.$size-px - 11;
+                        
                     }
                 }
 
@@ -88,8 +89,27 @@
     }
 }
 
+.carousel-control-prev-icon{
+    background-color: green;
 
-.carousel-control-prev:hover, .carousel-control-next:hover{
-    background-color: #dcebe9;
+    @include mobile{
+        background-color: #e5f0d2;
+    }
+
+    &:hover{
+        background-color: black;
+    }
+}
+
+.carousel-control-next-icon{
+    background-color: green;
+
+    @include mobile{
+        background-color: #e5f0d2;
+    }
+
+    &:hover{
+        background-color: black;
+    }
 }
 

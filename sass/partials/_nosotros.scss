@@ -1,6 +1,7 @@
 @use 'variables';
 @import 'mixin';
 
+
 .banner{
     background-image: url(../img/banner1.jpg);
     background-position: variables.$centro;
@@ -90,6 +91,10 @@
     margin-top: variables.$size-px * 2;
     margin-bottom: variables.$size-px * 5;
 
+    @include mobile{
+        box-shadow: none;
+    }
+
     .factores{
         background-color: #436d60;
         text-align: variables.$centro;
@@ -98,6 +103,11 @@
             font-size: variables.$sizeR * 4;
             margin-top: variables.$size-px;
             color: white;
+
+            @include mobile{
+                font-size: variables.$sizeR + 2;
+            }
+
         }
 
         p{
@@ -120,12 +130,20 @@
         font-weight: variables.$negrita;
         margin-bottom: variables.$size-px - 20;
         margin-left: variables.$size-px * 2;
+
+        @include mobile{
+            font-size: variables.$sizeR + 1;
+        }
     }
 
     p{
         font-size: variables.$sizeR + 1;
         padding: variables.$size-px * 2;
         text-align: left;
+
+        @include mobile{
+            font-size: variables.$sizeR + 0.5;
+        }
     }
 }
 
